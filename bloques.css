@@ -1,0 +1,56 @@
+*{
+    transition: 0.5s ease;
+}
+ .bloques{
+    /* background-color: red; */
+ 
+    height: auto;
+    display: flex;
+    
+    justify-content: center;
+   
+}
+.bloques .bloque--uno
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.bloques .bloque--uno a {
+    padding: 10px 10px;
+margin: 0 5px;
+    font-size: 20px;  
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.643);
+    transition: transform 0.3s ease, padding 0.3s ease;
+    transform: perspective(500px); /* Configura la perspectiva para ver el efecto 3D */
+}
+
+.bloques .bloque--uno a:hover {
+   
+    transform: perspective(500px) translateZ(50px); /* Movimiento en el eje Z */
+    background-color: rgba(0, 128, 0, 0.435);
+   
+    color: white;
+}
+
+
+
+
+
+@media only screen and (max-width: 1050px){
+    .bloques .bloque--uno 
+    {
+        display: none;
+    }
+ 
+
+
+ 
+}

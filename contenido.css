@@ -1,0 +1,68 @@
+.contenido{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+    
+}
+.contenido .card a{
+
+      gap: 10px;
+    /* padding-left: 20px; */
+    position: relative;
+    transition: 0.3s ease;
+  
+}
+
+.contenido .card a:hover{
+font-weight: 600;
+}
+.contenido .card div a{
+    margin: 10px;
+}
+
+.contenido .card{
+    width: 33%;
+    object-fit: cover;
+  justify-content: start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+    border: unset;
+   
+    box-shadow: unset;
+}
+.comunicate a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.redes div{
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap: 40px; */
+    
+}
+.redes--bg a {
+ padding: 10px 0;
+}
+
+@media only screen and (max-width: 750px){
+.contenido{
+    flex-direction: column;
+}
+
+.contenido .card{
+    width: 100%;
+}
+
+.contenido .card div a{
+    margin: unset;
+}
+}

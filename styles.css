@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Kumbh Sans", sans-serif;
+    transition: 0.5s ease;
+    letter-spacing: 1px;
+}
+h1{
+  font-weight: 600;
+ 
+}
+h2, h3{
+text-align: center;
+  font-weight: 400;
+  padding: 5px;
+  gap: 2px;
+}
+p{
+  line-height: 150%;
+  letter-spacing: 2px;
+  padding: 2px;
+  color: #555;
+}
+
+
+:root {
+  --cuadricula: repeating-linear-gradient(to bottom,transparent 0%,transparent 1%,
+  rgba(0, 128, 0, 0.435) 1%, rgba(0, 128, 0, 0.435) 2%,transparent 2%,transparent 98%, rgba(0, 128, 0, 0.435) 98%, rgba(0, 128, 0, 0.435) 99%,transparent 99% , transparent 100%),
+  repeating-linear-gradient(to left,transparent 0%,transparent 1%,
+  rgba(0, 128, 0, 0.435) 1%, rgba(0, 128, 0, 0.435) 2%,transparent 2%,transparent 98%, rgba(0, 128, 0, 0.435) 98%, rgba(0, 128, 0, 0.435) 99%,transparent 99% , transparent 100%);
+  --gradient01: linear-gradient(to top,rgba(0, 128, 0, 0.435),white,rgba(0, 128, 0, 0.435));
+  
+}
+.flex--{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.column{
+  flex-direction: column;
+}
+.space{
+  justify-content: space-between;
+  padding:15px;
+}
+.blue{
+  color: rgb(7, 74, 167);
+  text-align: center;
+
+}
+.black{
+  
+  padding: 50px 25px;
+  max-width: 750px;
+}
+
+body{
+   
+    max-width: 1920px;
+    margin: auto;
+ position: relative;
+
+}
+body:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+animation: body__ 0.4s 0.3s linear forwards;
+}
+@keyframes body__{
+  0%{clip-path: polygon(0%0%,100%0%,100%100%,0%100%);
+    opacity: 1;
+  }
+  100%{clip-path: polygon(0%0%,0%0%,100%100%,100%100%);
+    opacity: 0;
+  }
+}
+
+
+header{
+   position: absolute;
+   top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+   z-index: 5;
+   
+   
+}
+.header-service{
+  background-color: rgba(0, 128, 0, 0.435);
+  position: relative;
+ 
+}
+
+.logo span{
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+padding: 2px;
+background-color: #ffffff;
+}
+.logo span:last-child{
+  font-weight: 600;
+}
+@media only screen and (max-width: 400px){
+  
+    .logo span{
+        font-size: 25px;
+    }
+}
+h1{
+  font-size: 25px;
+}
+.info-cards p{
+  max-width: 450px;
+  text-align: center;
+  padding:100px 30px;
+  font-style: italic; 
+}
+/* =====================interaccion al pasar */
+
+.observer{
+  clip-path: polygon(0%0%,0%0%,0%100%,0%100%);
+  transition: 1s ease;
+}
+
+ .observer.active{
+  clip-path: polygon(0%0%,100%0%,100%100%,0%100%);
+}
