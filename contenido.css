@@ -3,7 +3,7 @@
    
     flex-wrap: wrap;
    justify-content: space-around;
-    padding: 15px;
+    padding: 30px 15px;
     gap: 20px;
 
     div{
