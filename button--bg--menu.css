@@ -101,14 +101,12 @@
             position: absolute;
             left: 25px;
             top: 25px;
-           
+        
             display: flex;
             justify-content: center;
             flex-direction: column;
+            gap: 30px;
+            
         }
-        .redes--bg a
-        {
-            margin: 5px;
-            filter: drop-shadow(0 0 0.2rem white);
-        }
+      
      
