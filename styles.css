@@ -49,7 +49,7 @@ p{
 }
 .blue{
   color: rgb(7, 74, 167);
-  text-align: center;
+  /* text-align: center; */
 
 }
 .black{
@@ -137,4 +137,9 @@ h1{
 
  .observer.active{
   clip-path: polygon(0%0%,100%0%,100%100%,0%100%);
+}
+/* =====boton de accion */
+.accion{
+padding: 10px;
+  border: 1px solid black;
 }
