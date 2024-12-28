@@ -3,4 +3,4 @@ Disallow: /
 Allow: /index.html
 Allow: /servicios.html
 Allow: /blog.html
-Sitemap: https://77iu.github.io/enfermeria-profesional/sitemap.xml
+Sitemap: https://asencio-rocio.github.io/enfermeria-profesional/sitemap.xml
